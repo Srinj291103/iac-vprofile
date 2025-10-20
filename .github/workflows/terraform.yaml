@@ -30,7 +30,7 @@ jobs:
          uses: actions/checkout@v4
        - name: Setup Terraform with specified version on the runner
          uses: hashicorp/setup-terraform@v2
-       - name: Terraform Init
+       - name: Terraform init
          id: init
          run: terraform init_backend-config="bucket=$BUCKET_TF_STATE"
        - name: Terraform format
